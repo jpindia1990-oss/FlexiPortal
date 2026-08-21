@@ -39,7 +39,7 @@ jobs:
         run: |
           CSPROJ=$(find . -name "FlexiPortal.Mobile.csproj" -o -name "*.Mobile.csproj" | head -1)
           echo "Publishing: $CSPROJ"
-          dotnet publish "$CSPROJ" -f net9.0-ios -c Release -p:BuildIpa=true -p:EnableCodeSigning=false -p:EnableWindowsTargeting=true -p:CheckEolWorkloads=false -p:RunAOTCompilation=false
+          dotnet publish "$CSPROJ" -f net9.0-ios -c Release -r ios-arm64 -p:BuildIpa=true -p:EnableCodeSigning=false -p:EnableWindowsTargeting=true -p:CheckEolWorkloads=false -p:RunAOTCompilation=false -p:PlatformTarget=AnyCPU
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
