@@ -13,28 +13,29 @@ jobs:
         with:
           dotnet-version: 9.0.100
 
-      - name: Clean .NET 10 and 26.5 packs
+      - name: Clean .NET 10
         run: |
           rm -rf /Users/runner/.dotnet/sdk/10.*
           rm -rf /Users/runner/.dotnet/sdk-manifests/10.*
-          rm -rf /Users/runner/.dotnet/packs/Microsoft.iOS.Sdk.net9.0_26.5
-          rm -rf /Users/runner/.dotnet/packs/Microsoft.iOS.Sdk.net9.0_18.0*
-          ls /Users/runner/.dotnet/packs/ | grep iOS || echo "no ios pack"
-          dotnet --version
+          rm -rf /Users/runner/.dotnet/packs/*26.5*
 
-      - name: Install MAUI 9.0.100 stable
+      - name: Install MAUI 9.0.100
         run: dotnet workload install maui --version 9.0.100
 
-      - name: Verify no 26.5
+      - name: DEBUG - List files
         run: |
-          ls /Users/runner/.dotnet/packs/ | grep iOS
-          cat /Users/runner/.dotnet/packs/Microsoft.iOS.Sdk.net9.0_*/Sdk/AutoImport.props | grep Xcode || true
+          pwd
+          ls -la
+          find . -name "*.csproj" -o -name "*.slnx" -o -name "*.sln" | head -20
 
-      - name: Restore
-        run: dotnet restore FlexiPortal.Mobile.csproj -p:EnableWindowsTargeting=true -p:CheckEolWorkloads=false
+      - name: Restore (auto-find)
+        run: dotnet restore -p:EnableWindowsTargeting=true -p:CheckEolWorkloads=false
 
-      - name: Build iOS IPA
-        run: dotnet publish FlexiPortal.Mobile.csproj -f net9.0-ios -c Release -p:BuildIpa=true -p:EnableCodeSigning=false -p:EnableWindowsTargeting=true -p:CheckEolWorkloads=false -p:RunAOTCompilation=false
+      - name: Build iOS IPA (auto-find csproj)
+        run: |
+          CSPROJ=$(find . -name "FlexiPortal.Mobile.csproj" | head -1)
+          echo "Found: $CSPROJ"
+          dotnet publish "$CSPROJ" -f net9.0-ios -c Release -p:BuildIpa=true -p:EnableCodeSigning=false -p:EnableWindowsTargeting=true -p:CheckEolWorkloads=false -p:RunAOTCompilation=false
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
