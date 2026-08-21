@@ -29,6 +29,14 @@ jobs:
           echo "--- all projects ---"
           find . -type f -name "*.csproj" -o -name "*.slnx" -o -name "*.sln"
 
+
+           - name: Clean old build
+          run: |
+          rm -rf obj bin
+          rm -rf EmpTrack.Shared/obj EmpTrack.Shared/bin
+          find . -type d -name obj -exec rm -rf {} + || true
+          find . -type d -name bin -exec rm -rf {} + || true
+
       - name: Restore
         run: |
           FILE=$(find . -name "*.slnx" -o -name "*.sln" -o -name "*.csproj" | head -1)
