@@ -1,7 +1,6 @@
 name: iOS Release
 on:
   workflow_dispatch:
-
 jobs:
   build:
     runs-on: macos-15
@@ -15,39 +14,23 @@ jobs:
 
       - name: Clean .NET 10
         run: |
-          rm -rf /Users/runner/.dotnet/sdk/10.*
-          rm -rf /Users/runner/.dotnet/sdk-manifests/10.*
-          rm -rf /Users/runner/.dotnet/packs/*26.5*
+          rm -rf /Users/runner/.dotnet/sdk/10.* || true
+          rm -rf /Users/runner/.dotnet/sdk-manifests/10.* || true
 
-      - name: Install MAUI 9.0.100
+      - name: Install MAUI
         run: dotnet workload install maui --version 9.0.100
 
-      - name: List files
+      - name: Clean old build
         run: |
-          pwd
-          ls -la
-          echo "--- all projects ---"
-          find . -type f -name "*.csproj" -o -name "*.slnx" -o -name "*.sln"
-
-
-           - name: Clean old build
-          run: |
-          rm -rf obj bin
-          rm -rf EmpTrack.Shared/obj EmpTrack.Shared/bin
+          rm -rf obj bin || true
           find . -type d -name obj -exec rm -rf {} + || true
           find . -type d -name bin -exec rm -rf {} + || true
 
       - name: Restore
-        run: |
-          FILE=$(find . -name "*.slnx" -o -name "*.sln" -o -name "*.csproj" | head -1)
-          echo "Restoring: $FILE"
-          dotnet restore "$FILE" -p:EnableWindowsTargeting=true -p:CheckEolWorkloads=false
+        run: dotnet restore FlexiPortal.Mobile.csproj -p:EnableWindowsTargeting=true -p:CheckEolWorkloads=false
 
       - name: Build iOS IPA
-        run: |
-          CSPROJ=$(find . -name "FlexiPortal.Mobile.csproj" -o -name "*.Mobile.csproj" | head -1)
-          echo "Publishing: $CSPROJ"
-          dotnet publish "$CSPROJ" -f net9.0-ios -c Release -r ios-arm64 -p:BuildIpa=true -p:EnableCodeSigning=false -p:EnableWindowsTargeting=true -p:CheckEolWorkloads=false -p:RunAOTCompilation=false -p:PlatformTarget=AnyCPU
+        run: dotnet publish FlexiPortal.Mobile.csproj -f net9.0-ios -c Release -r ios-arm64 -p:BuildIpa=true -p:EnableCodeSigning=false -p:EnableWindowsTargeting=true -p:CheckEolWorkloads=false -p:RunAOTCompilation=false -p:PlatformTarget=AnyCPU
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
