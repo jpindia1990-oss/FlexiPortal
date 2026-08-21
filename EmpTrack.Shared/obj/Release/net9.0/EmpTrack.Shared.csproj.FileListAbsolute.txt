@@ -1,0 +1,11 @@
+C:\Users\user\source\EmpTrack.Shared\bin\Release\net9.0\EmpTrack.Shared.deps.json
+C:\Users\user\source\EmpTrack.Shared\bin\Release\net9.0\EmpTrack.Shared.dll
+C:\Users\user\source\EmpTrack.Shared\bin\Release\net9.0\EmpTrack.Shared.pdb
+C:\Users\user\source\EmpTrack.Shared\obj\Release\net9.0\EmpTrack.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\EmpTrack.Shared\obj\Release\net9.0\EmpTrack.Shared.AssemblyInfoInputs.cache
+C:\Users\user\source\EmpTrack.Shared\obj\Release\net9.0\EmpTrack.Shared.AssemblyInfo.cs
+C:\Users\user\source\EmpTrack.Shared\obj\Release\net9.0\EmpTrack.Shared.csproj.CoreCompileInputs.cache
+C:\Users\user\source\EmpTrack.Shared\obj\Release\net9.0\EmpTrack.Shared.dll
+C:\Users\user\source\EmpTrack.Shared\obj\Release\net9.0\refint\EmpTrack.Shared.dll
+C:\Users\user\source\EmpTrack.Shared\obj\Release\net9.0\EmpTrack.Shared.pdb
+C:\Users\user\source\EmpTrack.Shared\obj\Release\net9.0\ref\EmpTrack.Shared.dll
