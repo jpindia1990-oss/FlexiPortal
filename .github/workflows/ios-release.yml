@@ -22,19 +22,23 @@ jobs:
       - name: Install MAUI 9.0.100
         run: dotnet workload install maui --version 9.0.100
 
-      - name: DEBUG - List files
+      - name: List files
         run: |
           pwd
           ls -la
-          find . -name "*.csproj" -o -name "*.slnx" -o -name "*.sln" | head -20
+          echo "--- all projects ---"
+          find . -type f -name "*.csproj" -o -name "*.slnx" -o -name "*.sln"
 
-      - name: Restore (auto-find)
-        run: dotnet restore -p:EnableWindowsTargeting=true -p:CheckEolWorkloads=false
-
-      - name: Build iOS IPA (auto-find csproj)
+      - name: Restore
         run: |
-          CSPROJ=$(find . -name "FlexiPortal.Mobile.csproj" | head -1)
-          echo "Found: $CSPROJ"
+          FILE=$(find . -name "*.slnx" -o -name "*.sln" -o -name "*.csproj" | head -1)
+          echo "Restoring: $FILE"
+          dotnet restore "$FILE" -p:EnableWindowsTargeting=true -p:CheckEolWorkloads=false
+
+      - name: Build iOS IPA
+        run: |
+          CSPROJ=$(find . -name "FlexiPortal.Mobile.csproj" -o -name "*.Mobile.csproj" | head -1)
+          echo "Publishing: $CSPROJ"
           dotnet publish "$CSPROJ" -f net9.0-ios -c Release -p:BuildIpa=true -p:EnableCodeSigning=false -p:EnableWindowsTargeting=true -p:CheckEolWorkloads=false -p:RunAOTCompilation=false
 
       - name: Upload IPA
