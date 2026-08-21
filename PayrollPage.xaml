@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlexiPortal.Mobile.Pages.PayrollPage"
+             Title="Pay Register"
+              Shell.NavBarIsVisible="True"
+             Shell.FlyoutBehavior="Flyout"
+             Shell.PresentationMode="Animated"
+             BackgroundColor="#f8fafc">
+           
+
+    <Grid RowDefinitions="Auto, Auto, *, Auto" Padding="0">
+        <Grid Grid.Row="0" BackgroundColor="White" Padding="20,50,20,15" ColumnDefinitions="Auto, *, Auto">
+            <Border Grid.Column="0" StrokeShape="RoundRectangle 12" BackgroundColor="#EEF2FF" WidthRequest="44" HeightRequest="44">
+                <Label Text="₹" FontSize="20" FontAttributes="Bold" TextColor="#4F46E5" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Border>
+            <VerticalStackLayout Grid.Column="1" Margin="12,0,0,0" VerticalOptions="Center">
+               
+                <Label Text="Tap to download payslip" FontSize="12" TextColor="#6B7280"/>
+            </VerticalStackLayout>
+        </Grid>
+
+        <RefreshView Grid.Row="2" x:Name="RefreshView" Refreshing="OnRefresh">
+            <CollectionView x:Name="PayrollList" Margin="15,10,15,0" SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Stroke="Transparent" StrokeShape="RoundRectangle 20" BackgroundColor="White" Margin="0,0,0,14" Padding="18">
+                            <Border.Shadow>
+                                <Shadow Brush="#000000" Opacity="0.06" Radius="20" Offset="0,4"/>
+                            </Border.Shadow>
+                            <Grid RowDefinitions="Auto, Auto, Auto">
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnPayslipTapped"/>
+                                </Grid.GestureRecognizers>
+                                <Grid Grid.Row="0" ColumnDefinitions="Auto, *, Auto">
+                                    <Border Grid.Column="0" WidthRequest="48" HeightRequest="48" StrokeShape="RoundRectangle 14" BackgroundColor="#EEF2FF">
+                                        <Label Text="{Binding MonthShort}" FontSize="12" FontAttributes="Bold" TextColor="#4F46E5" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    </Border>
+                                    <VerticalStackLayout Grid.Column="1" Margin="12,0,0,0" VerticalOptions="Center">
+                                        <Label Text="{Binding MonthDisplay}" FontSize="16" FontAttributes="Bold" TextColor="#111827"/>
+                                        <Label Text="{Binding StatusText}" FontSize="11" TextColor="#10B981" FontAttributes="Bold"/>
+                                    </VerticalStackLayout>
+                                    <VerticalStackLayout Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center">
+                                        <Label Text="NET PAY" FontSize="9" TextColor="#9CA3AF" FontAttributes="Bold" HorizontalOptions="End"/>
+                                        <Label Text="{Binding NetPay, StringFormat='₹{0:N0}'}" FontSize="18" FontAttributes="Bold" TextColor="#111827" HorizontalOptions="End"/>
+                                    </VerticalStackLayout>
+                                </Grid>
+                                <BoxView Grid.Row="1" HeightRequest="1" Color="#F3F4F6" Margin="0,14"/>
+                                <Grid Grid.Row="2" ColumnDefinitions="*, *, Auto">
+                                    <VerticalStackLayout Grid.Column="0">
+                                        <Label Text="EARNINGS" FontSize="9" TextColor="#9CA3AF" FontAttributes="Bold"/>
+                                        <Label Text="{Binding TotalEarnings, StringFormat='₹{0:N0}'}" FontSize="13" FontAttributes="Bold" TextColor="#111827"/>
+                                    </VerticalStackLayout>
+                                    <VerticalStackLayout Grid.Column="1">
+                                        <Label Text="DEDUCTIONS" FontSize="9" TextColor="#9CA3AF" FontAttributes="Bold"/>
+                                        <Label Text="{Binding TotalDeductions, StringFormat='₹{0:N0}'}" FontSize="13" FontAttributes="Bold" TextColor="#EF4444"/>
+                                    </VerticalStackLayout>
+                                    <Border Grid.Column="2" StrokeShape="RoundRectangle 10" BackgroundColor="#4F46E5" Padding="12,6" VerticalOptions="Center">
+                                        <Label Text="PDF" FontSize="11" FontAttributes="Bold" TextColor="White"/>
+                                    </Border>
+                                </Grid>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+
+        <Border Grid.Row="3" StrokeShape="RoundRectangle 24,24,0,0" BackgroundColor="#111827" Padding="20">
+            <Grid ColumnDefinitions="*, *, *">
+                <VerticalStackLayout Grid.Column="0" HorizontalOptions="Center">
+                    <Label Text="TOTAL EARNED" FontSize="9" TextColor="#9CA3AF" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label x:Name="YtdEarnLabel" Text="₹0" FontSize="14" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center">
+                    <Label Text="TD DEDUCTED" FontSize="9" TextColor="#9CA3AF" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label x:Name="YtdDedLabel" Text="₹0" FontSize="14" FontAttributes="Bold" TextColor="#F87171" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Column="2" HorizontalOptions="Center">
+                    <Label Text="AVG NET" FontSize="9" TextColor="#9CA3AF" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label x:Name="AvgNetLabel" Text="₹0" FontSize="14" FontAttributes="Bold" TextColor="#34D399" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Grid>
+        </Border>
+    </Grid>
+</ContentPage>

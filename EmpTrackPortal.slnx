@@ -1,0 +1,20 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Folder Name="/.github/" />
+  <Folder Name="/.github/workflows/">
+    <File Path="ios-release.yml" />
+  </Folder>
+  <Project Path="../EmpTrack.Shared/EmpTrack.Shared.csproj">
+    <Platform Solution="Release|x64" Project="x64" />
+  </Project>
+  <Project Path="../EmpTrackAPI.Api/EmpTrackAPI.Api.csproj">
+    <Platform Solution="Release|x64" Project="x64" />
+  </Project>
+  <Project Path="FlexiPortal.Mobile.csproj">
+    <Platform Solution="Release|x64" Project="x64" />
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>

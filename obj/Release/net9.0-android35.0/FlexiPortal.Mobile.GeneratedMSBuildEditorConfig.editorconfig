@@ -1,0 +1,87 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net9.0-android35.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FlexiPortal.Mobile
+build_property.ProjectDir = C:\Users\user\source\EmpTrackPortal\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/user/source/EmpTrackPortal/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FlexiPortal.Mobile.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/user/source/EmpTrackPortal/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FlexiPortal.Mobile.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/user/source/EmpTrackPortal/AttendanceHistoryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FlexiPortal.Mobile.AttendanceHistoryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AttendanceHistoryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AttendanceHistoryPage.xaml
+
+[C:/Users/user/source/EmpTrackPortal/AttendancePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FlexiPortal.Mobile.AttendancePage.xaml
+build_metadata.AdditionalFiles.TargetPath = AttendancePage.xaml
+build_metadata.AdditionalFiles.RelativePath = AttendancePage.xaml
+
+[C:/Users/user/source/EmpTrackPortal/LeaveApprovalPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FlexiPortal.Mobile.LeaveApprovalPage.xaml
+build_metadata.AdditionalFiles.TargetPath = LeaveApprovalPage.xaml
+build_metadata.AdditionalFiles.RelativePath = LeaveApprovalPage.xaml
+
+[C:/Users/user/source/EmpTrackPortal/LeaveBalancePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FlexiPortal.Mobile.LeaveBalancePage.xaml
+build_metadata.AdditionalFiles.TargetPath = LeaveBalancePage.xaml
+build_metadata.AdditionalFiles.RelativePath = LeaveBalancePage.xaml
+
+[C:/Users/user/source/EmpTrackPortal/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FlexiPortal.Mobile.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = LoginPage.xaml
+
+[C:/Users/user/source/EmpTrackPortal/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FlexiPortal.Mobile.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/user/source/EmpTrackPortal/PayrollPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FlexiPortal.Mobile.PayrollPage.xaml
+build_metadata.AdditionalFiles.TargetPath = PayrollPage.xaml
+build_metadata.AdditionalFiles.RelativePath = PayrollPage.xaml
+
+[C:/Users/user/source/EmpTrackPortal/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FlexiPortal.Mobile.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/user/source/EmpTrackPortal/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FlexiPortal.Mobile.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

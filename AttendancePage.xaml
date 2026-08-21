@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlexiPortal.Mobile.Pages.AttendancePage" 
+             Title="Attendance"
+             BackgroundColor="#1E1E1E">
+
+    <VerticalStackLayout Padding="30" Spacing="25" VerticalOptions="Center" HorizontalOptions="Center">
+
+        <Label Text="Mark Your Attendance" 
+               FontSize="24" 
+               FontAttributes="Bold"
+               TextColor="White"
+               HorizontalOptions="Center" />
+
+        <HorizontalStackLayout HorizontalOptions="Start" Margin="5,0,0,-15">
+            <Label Text="Location" TextColor="#8A8A8F" FontSize="14" />
+            <Label Text="*" TextColor="#FF453A" FontSize="14" FontAttributes="Bold" />
+        </HorizontalStackLayout>
+
+        <Border StrokeShape="RoundRectangle 12" 
+                Stroke="#2C2C2E" 
+                BackgroundColor="#1C1C1E" 
+                WidthRequest="260" 
+                HeightRequest="50"
+                HorizontalOptions="Center">
+            <Entry x:Name="LocationReasonEntry" 
+                   Placeholder="e.g., Client Site, Head Office" 
+                   PlaceholderColor="#48484A"
+                   TextColor="White"
+                   FontSize="14"
+                   VerticalOptions="Center"
+                   Margin="15,0"/>
+        </Border>
+
+        <Button x:Name="PunchBtn"
+                Text="PUNCH" 
+                Clicked="OnPunchInClicked"
+                HeightRequest="100"
+                WidthRequest="200"
+                CornerRadius="50"
+                BackgroundColor="#22c55e"
+                TextColor="White"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalOptions="Center"/>
+
+        <Label x:Name="StatusLabel" 
+               HorizontalOptions="Center" 
+               TextColor="Gray" 
+               FontSize="14"
+               Text="Ready to Punch" />
+
+    </VerticalStackLayout>
+</ContentPage>

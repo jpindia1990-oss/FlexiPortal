@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="33" />
+  <application android:usesCleartextTraffic="true">
+    <service android:name="crc6483a76db37dcc3c33.GpsForegroundService"
+             android:foregroundServiceType="location"
+             android:exported="false" />
+  </application>
+</manifest>

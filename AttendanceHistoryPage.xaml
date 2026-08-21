@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlexiPortal.Mobile.Pages.AttendanceHistoryPage"
+             Title="Attendance"
+             BackgroundColor="#F5F7FB">
+
+    <Grid RowDefinitions="Auto, Auto, *">
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#2563EB" StrokeThickness="0" 
+                StrokeShape="RoundRectangle 0,0,20,20" Padding="20,15,20,20">
+            <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="*,Auto">
+                <Label Text="Attendance History" TextColor="White" FontSize="20" FontAttributes="Bold"/>
+                
+
+                <Border Grid.RowSpan="2" Grid.Column="1" BackgroundColor="#1E40AF" StrokeThickness="0" 
+                        StrokeShape="RoundRectangle 12" Padding="12,6" VerticalOptions="Center">
+                    <HorizontalStackLayout Spacing="10">
+                        <Label Text="◀" TextColor="White" FontSize="16">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnPrevMonth"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Label x:Name="MonthLabel" Text="JUL 2026" TextColor="White" FontAttributes="Bold" FontSize="14" VerticalOptions="Center"/>
+                        <Label Text="▶" TextColor="White" FontSize="16">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnNextMonth"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </HorizontalStackLayout>
+                </Border>
+            </Grid>
+        </Border>
+        <Grid Grid.Row="1" ColumnDefinitions="*,*,*,*" ColumnSpacing="8" Padding="15,15,15,0">
+            <Border x:Name="LateCard" StrokeThickness="0" BackgroundColor="White" StrokeShape="RoundRectangle 14" Padding="10">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLateTapped"/>
+                </Border.GestureRecognizers>
+                <VerticalStackLayout Spacing="2" HorizontalOptions="Center">
+                    <Label Text="Late" TextColor="#6B7280" FontSize="10" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label x:Name="LateCountLabel" Text="0" FontSize="18" FontAttributes="Bold" TextColor="#EF4444" HorizontalOptions="Center"/>
+                    <Label Text="days" FontSize="10" TextColor="#9CA3AF" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Border>
+            <Border Grid.Column="1" x:Name="AbsentCard" StrokeThickness="0" BackgroundColor="White" StrokeShape="RoundRectangle 14" Padding="10">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnAbsentTapped"/>
+                </Border.GestureRecognizers>
+                <VerticalStackLayout Spacing="2" HorizontalOptions="Center">
+                    <Label Text="Absent" TextColor="#6B7280" FontSize="10" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label x:Name="AbsentCountLabel" Text="0" FontSize="18" FontAttributes="Bold" TextColor="#DC2626" HorizontalOptions="Center"/>
+                    <Label Text="AB" FontSize="10" TextColor="#9CA3AF" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Border>
+            <Border Grid.Column="2" x:Name="WOCard" StrokeThickness="0" BackgroundColor="White" StrokeShape="RoundRectangle 14" Padding="10">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnWOTapped"/>
+                </Border.GestureRecognizers>
+                <VerticalStackLayout Spacing="2" HorizontalOptions="Center">
+                    <Label Text="WO" TextColor="#6B7280" FontSize="10" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label x:Name="WOCountLabel" Text="0" FontSize="18" FontAttributes="Bold" TextColor="#2563EB" HorizontalOptions="Center"/>
+                    <Label Text="off" FontSize="10" TextColor="#9CA3AF" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Border>
+            <Border Grid.Column="3" x:Name="PHCard" StrokeThickness="0" BackgroundColor="White" StrokeShape="RoundRectangle 14" Padding="10">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnPHTapped"/>
+                </Border.GestureRecognizers>
+                <VerticalStackLayout Spacing="2" HorizontalOptions="Center">
+                    <Label Text="PH" TextColor="#6B7280" FontSize="10" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label x:Name="PHCountLabel" Text="0" FontSize="18" FontAttributes="Bold" TextColor="#16A34A" HorizontalOptions="Center"/>
+                    <Label Text="holiday" FontSize="10" TextColor="#9CA3AF" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Border>
+        </Grid>
+        <!-- List -->
+        <CollectionView Grid.Row="2" x:Name="AttendanceList" Margin="0,10,0,0" SelectionMode="Single" SelectionChanged="OnItemSelected">
+            <CollectionView.EmptyView>
+                <VerticalStackLayout Padding="40" Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="📅" FontSize="40" HorizontalOptions="Center"/>
+                    <Label Text="No records this month" TextColor="#6B7280" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </CollectionView.EmptyView>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border StrokeThickness="0" BackgroundColor="White" StrokeShape="RoundRectangle 16" Margin="15,6" Padding="14">
+                        <Grid ColumnDefinitions="56,*,Auto" RowDefinitions="Auto,Auto">
+                            <!-- Date Bubble -->
+                            <Border BackgroundColor="{Binding BgColor}" StrokeThickness="0" StrokeShape="RoundRectangle 12" WidthRequest="48" HeightRequest="48" VerticalOptions="Center">
+                                <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                                    <Label Text="{Binding DayNumber}" FontSize="18" FontAttributes="Bold" TextColor="{Binding TextColor}" HorizontalOptions="Center" Margin="0,-2,0,0"/>
+                                    <Label Text="{Binding DayShort}" FontSize="10" FontAttributes="Bold" TextColor="{Binding TextColor}" HorizontalOptions="Center" Opacity="0.8"/>
+                                </VerticalStackLayout>
+                            </Border>
+
+                            <!-- Middle -->
+                            <VerticalStackLayout Grid.Column="1" Margin="12,0,0,0" VerticalOptions="Center" Spacing="3">
+                                <HorizontalStackLayout Spacing="6">
+                                    <Label Text="{Binding PunchDate, StringFormat='{0:dd MMM}'}" FontSize="14" FontAttributes="Bold" TextColor="#111827"/>
+                                    <Border BackgroundColor="{Binding StatusBg}" StrokeThickness="0" StrokeShape="RoundRectangle 6" Padding="6,2">
+                                        <Label Text="{Binding StatusText}" FontSize="10" FontAttributes="Bold" TextColor="{Binding StatusColor}"/>
+                                    </Border>
+                                </HorizontalStackLayout>
+                                <Label Text="{Binding Location}" FontSize="11" TextColor="#6B7280" LineBreakMode="TailTruncation" MaxLines="1"/>
+                            </VerticalStackLayout>
+
+                            <!-- In/Out -->
+                            <VerticalStackLayout Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End" Spacing="2">
+                                <Border BackgroundColor="#F0FDF4" StrokeThickness="0" StrokeShape="RoundRectangle 8" Padding="8,4">
+                                    <HorizontalStackLayout Spacing="4">
+                                        <Label Text="IN" FontSize="9" FontAttributes="Bold" TextColor="#16A34A" VerticalOptions="Center"/>
+                                        <Label Text="{Binding InTime}" FontSize="12" FontAttributes="Bold" TextColor="#111827"/>
+                                    </HorizontalStackLayout>
+                                </Border>
+                                <Border BackgroundColor="#FEF2F2" StrokeThickness="0" StrokeShape="RoundRectangle 8" Padding="8,4" IsVisible="{Binding HasOut}">
+                                    <HorizontalStackLayout Spacing="4">
+                                        <Label Text="OUT" FontSize="9" FontAttributes="Bold" TextColor="#DC2626" VerticalOptions="Center"/>
+                                        <Label Text="{Binding OutTime}" FontSize="12" FontAttributes="Bold" TextColor="#111827"/>
+                                    </HorizontalStackLayout>
+                                </Border>
+                            </VerticalStackLayout>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

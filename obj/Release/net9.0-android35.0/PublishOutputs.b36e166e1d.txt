@@ -1,0 +1,3 @@
+C:\Users\user\source\EmpTrackPortal\bin\Release\net9.0-android35.0\publish\com.flexi.mobile.v2-Signed.apk
+C:\Users\user\source\EmpTrackPortal\bin\Release\net9.0-android35.0\publish\com.flexi.mobile.v2.apk
+C:\Users\user\source\EmpTrackPortal\bin\Release\net9.0-android35.0\publish\_Microsoft.Android.Resource.Designer.dll

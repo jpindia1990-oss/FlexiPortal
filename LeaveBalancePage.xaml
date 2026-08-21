@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlexiPortal.Mobile.Pages.LeaveBalancePage"
+             Title="Leave" BackgroundColor="#f8fafc">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="16">
+            <Label Text="Leave Balance" FontSize="20" FontAttributes="Bold" TextColor="#0f172a"/>
+
+            <!-- SP Balance List -->
+            <Frame CornerRadius="12" BackgroundColor="White" BorderColor="#e2e8f0" Padding="0" HasShadow="False">
+                <VerticalStackLayout>
+                    <Grid ColumnDefinitions="*,*,*,*" Padding="12,8" BackgroundColor="#f1f5f9">
+                        <Label Text="Type" FontSize="11" FontAttributes="Bold" TextColor="#64748b"/>
+                        <Label Grid.Column="1" Text="Opening" FontSize="11" FontAttributes="Bold" TextColor="#64748b" HorizontalOptions="Center"/>
+                        <Label Grid.Column="2" Text="Enjoy" FontSize="11" FontAttributes="Bold" TextColor="#64748b" HorizontalOptions="Center"/>
+                        <Label Grid.Column="3" Text="Balance" FontSize="11" FontAttributes="Bold" TextColor="#0f172a" HorizontalOptions="Center"/>
+                    </Grid>
+                    <CollectionView x:Name="BalanceList">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid ColumnDefinitions="*,*,*,*" Padding="12,12">
+                                    <Label Text="{Binding Lv_Desc}" FontSize="13" FontAttributes="Bold" TextColor="#0f172a"/>
+                                    <Label Grid.Column="1" Text="{Binding Opening}" FontSize="13" HorizontalOptions="Center"/>
+                                    <Label Grid.Column="2" Text="{Binding Enjoy}" FontSize="13" HorizontalOptions="Center" TextColor="#b45309"/>
+                                    <Label Grid.Column="3" Text="{Binding Balance}" FontSize="13" FontAttributes="Bold" HorizontalOptions="Center" TextColor="#15803d"/>
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Apply -->
+            <Frame CornerRadius="16" BackgroundColor="White" BorderColor="#e2e8f0" Padding="16" HasShadow="True">
+                <VerticalStackLayout Spacing="12">
+                    <Label Text="Apply Leave" FontSize="14" FontAttributes="Bold" TextColor="#0f172a"/>
+
+                    <!-- From Date - Mandatory -->
+                    <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+                        <VerticalStackLayout>
+                            <Label Text="From Date *" FontSize="11" TextColor="#64748b"/>
+                            <DatePicker x:Name="FromDate" Format="dd/MM/yyyy" DateSelected="OnDateChanged"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="1">
+                            <Label Text="To Date *" FontSize="11" TextColor="#64748b"/>
+                            <DatePicker x:Name="ToDate" Format="dd/MM/yyyy" DateSelected="OnDateChanged"/>
+                        </VerticalStackLayout>
+                    </Grid>
+
+                    <!-- Leave Type + Half Day -->
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12">
+                        <VerticalStackLayout>
+                            <Label Text="Leave Type *" FontSize="11" TextColor="#64748b"/>
+                            <Picker x:Name="LeaveTypePicker" Title="Select" FontSize="13" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="1" VerticalOptions="End" Spacing="2">
+                            <Label Text=" " FontSize="11"/>
+                            <HorizontalStackLayout Spacing="4" VerticalOptions="Center" Padding="0,8,0,0">
+                                <CheckBox x:Name="HalfDayCheck" CheckedChanged="OnHalfDayChanged" Color="#2563eb"/>
+                                <Label Text="Half Day" FontSize="12" VerticalOptions="Center" TextColor="#0f172a"/>
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+                    </Grid>
+
+                    <!-- Leave Days - NOT EDITABLE, auto from From & To -->
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="Leave Days" FontSize="11" TextColor="#64748b"/>
+                        <Entry x:Name="LeaveDaysEntry" Text="1" IsReadOnly="True" BackgroundColor="#f1f5f9" FontSize="13" TextColor="#0f172a" />
+                        <Label x:Name="DaysLabel" Text="1 Day" FontSize="11" FontAttributes="Bold" TextColor="#64748b" IsVisible="False"/>
+                    </VerticalStackLayout>
+
+                    <Editor x:Name="ReasonEditor" Placeholder="Reason for Leave" HeightRequest="80" FontSize="13" BackgroundColor="#f8fafc"/>
+
+                    <Button Text="Update" x:Name="SubmitBtn" Clicked="OnSubmitLeaveClicked" BackgroundColor="#5bc0de" TextColor="White" CornerRadius="8" HeightRequest="44" FontAttributes="Bold"/>
+
+                    <Label Text="My Requests" FontSize="14" FontAttributes="Bold" TextColor="#0f172a"/>
+                    <Label x:Name="NoDataLabel" Text="No leave requests found" IsVisible="False" FontSize="12" TextColor="#94a3b8" HorizontalOptions="Center"/>
+                    <CollectionView x:Name="LeaveHistoryList">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame CornerRadius="10" BackgroundColor="White" BorderColor="#e2e8f0" Padding="12" Margin="0,0,0,8" HasShadow="False">
+                                    <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto">
+                                        <VerticalStackLayout Grid.Column="0" Spacing="2">
+                                            <Label Text="{Binding LeaveType}" FontSize="13" FontAttributes="Bold"/>
+                                            <Label Text="{Binding Dates}" FontSize="11" TextColor="#64748b"/>
+                                            <Label Text="{Binding Reason}" FontSize="10" TextColor="#94a3b8" MaxLines="2"/>
+                                        </VerticalStackLayout>
+
+                                        <VerticalStackLayout Grid.Column="1" Spacing="6" VerticalOptions="Center" HorizontalOptions="End">
+                                            <Label Text="{Binding Status}" FontSize="11" FontAttributes="Bold" TextColor="{Binding StatusColor}" HorizontalOptions="End"/>
+                                            <Button Text="Delete" 
+                                FontSize="10" HeightRequest="28" CornerRadius="8"
+                                BackgroundColor="#FFF0F0" TextColor="#D92D20"
+                                IsVisible="{Binding IsPending}"
+                                CommandParameter="{Binding TranId}"
+                                Clicked="OnDeleteClicked"/>
+                                        </VerticalStackLayout>
+                                    </Grid>
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

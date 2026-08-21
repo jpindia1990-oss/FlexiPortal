@@ -1,0 +1,88 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlexiPortal.Mobile.Pages.LoginPage"
+             BackgroundColor="#f8fafc">
+
+    <Grid>
+        <!-- Top Gradient -->
+        <BoxView HeightRequest="280" VerticalOptions="Start">
+            <BoxView.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#2563eb" Offset="0" />
+                    <GradientStop Color="#7c3aed" Offset="1" />
+                </LinearGradientBrush>
+            </BoxView.Background>
+        </BoxView>
+
+        <ScrollView>
+            <VerticalStackLayout Spacing="0" Padding="24" VerticalOptions="Center">
+
+                <!-- Logo Card -->
+                <Border StrokeThickness="0" StrokeShape="RoundRectangle 24" BackgroundColor="White" 
+                        Padding="20" WidthRequest="80" HeightRequest="80" HorizontalOptions="Center" Margin="0,40,0,16">
+                    <Border.Shadow>
+                        <Shadow Brush="Black" Opacity="0.15" Radius="20" Offset="0,10"/>
+                    </Border.Shadow>
+                    <Image Source="flexiportal_logo.png" Aspect="AspectFit" HeightRequest="70" WidthRequest="70"/>
+                </Border>
+
+                <Label Text="FlexiPortal" FontSize="28" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
+                <Label Text="Workforce Management" FontSize="14" TextColor="#e0e7ff" HorizontalOptions="Center" Margin="0,0,0,30"/>
+
+                <!-- Glass Login Card -->
+                <Border StrokeThickness="0" StrokeShape="RoundRectangle 24" BackgroundColor="White" Padding="24">
+                    <Border.Shadow>
+                        <Shadow Brush="Black" Opacity="0.1" Radius="30" Offset="0,15"/>
+                    </Border.Shadow>
+                    <VerticalStackLayout Spacing="18">
+                        <Label Text="Welcome back" FontSize="20" FontAttributes="Bold" TextColor="#0f172a"/>
+                        <Label Text="Sign in to continue" FontSize="13" TextColor="#64748b" Margin="0,-12,0,8"/>
+
+                        <HorizontalStackLayout Spacing="8">
+                            <BoxView x:Name="StatusDot" Color="#22c55e" WidthRequest="8" HeightRequest="8" CornerRadius="4" VerticalOptions="Center"/>
+                            <Label x:Name="StatusLabel" Text="Secure Connection" FontSize="11" TextColor="#64748b" VerticalOptions="Center"/>
+                        </HorizontalStackLayout>
+
+                        <!-- Modern Input -->
+                        <VerticalStackLayout Spacing="6">
+                            <Label Text="COMPANY CODE" FontSize="10" FontAttributes="Bold" TextColor="#94a3b8" />
+                            <Border Stroke="#e2e8f0" StrokeThickness="1" StrokeShape="RoundRectangle 12" BackgroundColor="#f8fafc" Padding="14,0">
+                                <Entry x:Name="CompanyCodeEntry" Text="ACECARBO" Placeholder="ComCode" FontSize="14" TextColor="#0f172a" PlaceholderColor="#94a3b8" BackgroundColor="Transparent"/>
+                            </Border>
+                        </VerticalStackLayout>
+
+                        <VerticalStackLayout Spacing="6">
+                            <Label Text="EMPLOYEE ID" FontSize="10" FontAttributes="Bold" TextColor="#94a3b8" />
+                            <Border Stroke="#e2e8f0" StrokeThickness="1" StrokeShape="RoundRectangle 12" BackgroundColor="#f8fafc" Padding="14,0">
+                                <Entry x:Name="EmpIdEntry" Placeholder="Abc123" FontSize="14" TextColor="#0f172a" PlaceholderColor="#94a3b8" BackgroundColor="Transparent"/>
+                            </Border>
+                        </VerticalStackLayout>
+
+                        <VerticalStackLayout Spacing="6">
+                            <Label Text="PASSWORD" FontSize="10" FontAttributes="Bold" TextColor="#94a3b8" />
+                            <Border Stroke="#e2e8f0" StrokeThickness="1" StrokeShape="RoundRectangle 12" BackgroundColor="#f8fafc" Padding="4,0">
+                                <Grid ColumnDefinitions="*,Auto" HeightRequest="48">
+                                    <Entry x:Name="PassEntry" IsPassword="True" TextColor="#0f172a" PlaceholderColor="#94a3b8" BackgroundColor="Transparent" Margin="10,0" VerticalOptions="Center"/>
+                                    <Button x:Name="ToggleBtn" Grid.Column="1" Text="👁️" FontSize="14" BackgroundColor="Transparent" TextColor="#64748b" Clicked="OnTogglePasswordVisibility" WidthRequest="44"/>
+                                </Grid>
+                            </Border>
+                        </VerticalStackLayout>
+
+                        <HorizontalStackLayout Spacing="8" Margin="0,4">
+                            <CheckBox x:Name="RememberCheckBox" IsChecked="True" Color="#2563eb" />
+                            <Label Text="Remember me" FontSize="12" TextColor="#334155" VerticalOptions="Center"/>
+                        </HorizontalStackLayout>
+
+                        <Button Text="Sign In" Clicked="OnLoginClicked" BackgroundColor="#0f172a" TextColor="White" CornerRadius="12" HeightRequest="52" FontSize="15" FontAttributes="Bold"/>
+
+                        <Button x:Name="RequestApprovalBtn" Text="Request Device Approval" IsVisible="False" BackgroundColor="#f59e0b" TextColor="White" CornerRadius="12" HeightRequest="52" Clicked="OnRequestApprovalClicked"/>
+
+                        <Label x:Name="InfoLabel" FontSize="11" TextColor="#ef4444" HorizontalOptions="Center" IsVisible="False"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <Label Text="© 2026 FlexiPortal • Secure • Fast" FontSize="10" TextColor="#94a3b8" HorizontalOptions="Center" Margin="0,20"/>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

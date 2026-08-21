@@ -1,0 +1,547 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\EmpTrackPortal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D47E7AD7-8B79-9F0C-F585-2A9E81AFDB9A}|..\\EmpTrackAPI.Api\\EmpTrackAPI.Api.csproj|c:\\users\\user\\source\\emptrackapi.api\\emptrackdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D47E7AD7-8B79-9F0C-F585-2A9E81AFDB9A}|..\\EmpTrackAPI.Api\\EmpTrackAPI.Api.csproj|c:\\users\\user\\source\\emptrackapi.api\\controllers\\payslipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|c:\\users\\user\\source\\emptrackportal\\flexiportal.mobile.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|solutionrelative:flexiportal.mobile.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|c:\\users\\user\\source\\emptrackportal\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D47E7AD7-8B79-9F0C-F585-2A9E81AFDB9A}|..\\EmpTrackAPI.Api\\EmpTrackAPI.Api.csproj|c:\\users\\user\\source\\emptrackapi.api\\controllers\\deviceregistriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D47E7AD7-8B79-9F0C-F585-2A9E81AFDB9A}|..\\EmpTrackAPI.Api\\EmpTrackAPI.Api.csproj|c:\\users\\user\\source\\emptrackapi.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|c:\\users\\user\\source\\emptrackportal\\payrollpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|solutionrelative:payrollpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D47E7AD7-8B79-9F0C-F585-2A9E81AFDB9A}|..\\EmpTrackAPI.Api\\EmpTrackAPI.Api.csproj|c:\\users\\user\\source\\emptrackapi.api\\controllers\\leavecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D47E7AD7-8B79-9F0C-F585-2A9E81AFDB9A}|..\\EmpTrackAPI.Api\\EmpTrackAPI.Api.csproj|c:\\users\\user\\source\\emptrackapi.api\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D47E7AD7-8B79-9F0C-F585-2A9E81AFDB9A}|..\\EmpTrackAPI.Api\\EmpTrackAPI.Api.csproj|c:\\users\\user\\source\\emptrackapi.api\\emptrackapi.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D47E7AD7-8B79-9F0C-F585-2A9E81AFDB9A}|..\\EmpTrackAPI.Api\\EmpTrackAPI.Api.csproj|c:\\users\\user\\source\\emptrackapi.api\\controllers\\locationlogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D47E7AD7-8B79-9F0C-F585-2A9E81AFDB9A}|..\\EmpTrackAPI.Api\\EmpTrackAPI.Api.csproj|c:\\users\\user\\source\\emptrackapi.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|c:\\users\\user\\source\\emptrackportal\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|solutionrelative:services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|c:\\users\\user\\source\\emptrackportal\\services\\locationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|solutionrelative:services\\locationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|c:\\users\\user\\source\\emptrackportal\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|c:\\users\\user\\source\\emptrackportal\\platforms\\android\\locationforegroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|solutionrelative:platforms\\android\\locationforegroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|c:\\users\\user\\source\\emptrackportal\\platforms\\android\\backgroundlocationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|solutionrelative:platforms\\android\\backgroundlocationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|c:\\users\\user\\source\\emptrackportal\\attendancepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|solutionrelative:attendancepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D47E7AD7-8B79-9F0C-F585-2A9E81AFDB9A}|..\\EmpTrackAPI.Api\\EmpTrackAPI.Api.csproj|c:\\users\\user\\source\\emptrackapi.api\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA05AF23-66D8-64AC-498F-702549953BC7}|..\\EmpTrack.Shared\\EmpTrack.Shared.csproj|c:\\users\\user\\source\\emptrack.shared\\models\\attendancemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA05AF23-66D8-64AC-498F-702549953BC7}|..\\EmpTrack.Shared\\EmpTrack.Shared.csproj|c:\\users\\user\\source\\emptrack.shared\\models\\payrollmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA05AF23-66D8-64AC-498F-702549953BC7}|..\\EmpTrack.Shared\\EmpTrack.Shared.csproj|c:\\users\\user\\source\\emptrack.shared\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA05AF23-66D8-64AC-498F-702549953BC7}|..\\EmpTrack.Shared\\EmpTrack.Shared.csproj|c:\\users\\user\\source\\emptrack.shared\\models\\employeelocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA05AF23-66D8-64AC-498F-702549953BC7}|..\\EmpTrack.Shared\\EmpTrack.Shared.csproj|c:\\users\\user\\source\\emptrack.shared\\models\\assignedlocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA05AF23-66D8-64AC-498F-702549953BC7}|..\\EmpTrack.Shared\\EmpTrack.Shared.csproj|c:\\users\\user\\source\\emptrack.shared\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D47E7AD7-8B79-9F0C-F585-2A9E81AFDB9A}|..\\EmpTrackAPI.Api\\EmpTrackAPI.Api.csproj|c:\\users\\user\\source\\emptrackapi.api\\controllers\\appuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|c:\\users\\user\\source\\emptrackportal\\attendancehistorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|solutionrelative:attendancehistorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D47E7AD7-8B79-9F0C-F585-2A9E81AFDB9A}|..\\EmpTrackAPI.Api\\EmpTrackAPI.Api.csproj|c:\\users\\user\\source\\emptrackapi.api\\controllers\\mobileauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|c:\\users\\user\\source\\emptrackportal\\helpers\\apiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|solutionrelative:helpers\\apiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|c:\\users\\user\\source\\emptrackportal\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|solutionrelative:loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\.nuget\\packages\\microsoft.windowsappsdk\\1.7.250909003\\buildTransitive\\Microsoft.WindowsAppSDK.SelfContained.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|c:\\users\\user\\source\\emptrackportal\\leavebalancepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|solutionrelative:leavebalancepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|c:\\users\\user\\source\\emptrackportal\\leaveapprovalpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{312ED86B-4B0C-6B0E-CD89-55CBC181D942}|FlexiPortal.Mobile.csproj|solutionrelative:leaveapprovalpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackPortal\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackPortal\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T06:49:14.056Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:14:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:15:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FlexiPortal.Mobile.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackPortal\\FlexiPortal.Mobile.csproj",
+              "RelativeDocumentMoniker": "FlexiPortal.Mobile.csproj",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackPortal\\FlexiPortal.Mobile.csproj",
+              "RelativeToolTip": "FlexiPortal.Mobile.csproj",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAYwBYAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-18T14:18:23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PayslipController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\Controllers\\PayslipController.cs",
+              "RelativeDocumentMoniker": "..\\EmpTrackAPI.Api\\Controllers\\PayslipController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\Controllers\\PayslipController.cs",
+              "RelativeToolTip": "..\\EmpTrackAPI.Api\\Controllers\\PayslipController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAawGEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T14:18:13.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmpTrackDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\EmpTrackDbContext.cs",
+              "RelativeDocumentMoniker": "..\\EmpTrackAPI.Api\\EmpTrackDbContext.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\EmpTrackDbContext.cs",
+              "RelativeToolTip": "..\\EmpTrackAPI.Api\\EmpTrackDbContext.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAIAwwBcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T15:53:05.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DeviceRegistriesController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\Controllers\\DeviceRegistriesController.cs",
+              "RelativeDocumentMoniker": "..\\EmpTrackAPI.Api\\Controllers\\DeviceRegistriesController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\Controllers\\DeviceRegistriesController.cs",
+              "RelativeToolTip": "..\\EmpTrackAPI.Api\\Controllers\\DeviceRegistriesController.cs",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAAwLgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T15:13:04.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\EmpTrackAPI.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\appsettings.json",
+              "RelativeToolTip": "..\\EmpTrackAPI.Api\\appsettings.json",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-08T06:14:30.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PayrollPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackPortal\\PayrollPage.xaml.cs",
+              "RelativeDocumentMoniker": "PayrollPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackPortal\\PayrollPage.xaml.cs",
+              "RelativeToolTip": "PayrollPage.xaml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwC0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T08:01:37.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "..\\EmpTrackAPI.Api\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\wwwroot\\index.html",
+              "RelativeToolTip": "..\\EmpTrackAPI.Api\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-08-11T15:27:22.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmpTrackAPI.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\EmpTrackAPI.Api.csproj",
+              "RelativeDocumentMoniker": "..\\EmpTrackAPI.Api\\EmpTrackAPI.Api.csproj",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\EmpTrackAPI.Api.csproj",
+              "RelativeToolTip": "..\\EmpTrackAPI.Api\\EmpTrackAPI.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-18T14:29:22.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LeaveController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\Controllers\\LeaveController.cs",
+              "RelativeDocumentMoniker": "..\\EmpTrackAPI.Api\\Controllers\\LeaveController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\Controllers\\LeaveController.cs",
+              "RelativeToolTip": "..\\EmpTrackAPI.Api\\Controllers\\LeaveController.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAQwHUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T06:21:32.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "..\\EmpTrackAPI.Api\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "..\\EmpTrackAPI.Api\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAwI8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T15:15:48.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LocationLogsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\Controllers\\LocationLogsController.cs",
+              "RelativeDocumentMoniker": "..\\EmpTrackAPI.Api\\Controllers\\LocationLogsController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\Controllers\\LocationLogsController.cs",
+              "RelativeToolTip": "..\\EmpTrackAPI.Api\\Controllers\\LocationLogsController.cs",
+              "ViewState": "AgIAALwAAAAAAAAAAAAowMcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T10:05:08.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackPortal\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackPortal\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T16:02:03.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LocationService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackPortal\\Services\\LocationService.cs",
+              "RelativeDocumentMoniker": "Services\\LocationService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackPortal\\Services\\LocationService.cs",
+              "RelativeToolTip": "Services\\LocationService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwFwAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T15:09:22.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackPortal\\Services\\ApiService.cs",
+              "RelativeDocumentMoniker": "Services\\ApiService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackPortal\\Services\\ApiService.cs",
+              "RelativeToolTip": "Services\\ApiService.cs",
+              "ViewState": "AgIAANcAAAAAAAAAAAAowHgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T06:40:19.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LocationForegroundService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackPortal\\Platforms\\Android\\LocationForegroundService.cs",
+              "RelativeDocumentMoniker": "Platforms\\Android\\LocationForegroundService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackPortal\\Platforms\\Android\\LocationForegroundService.cs",
+              "RelativeToolTip": "Platforms\\Android\\LocationForegroundService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA+wCEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T10:06:54.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BackgroundLocationService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackPortal\\Platforms\\Android\\BackgroundLocationService.cs",
+              "RelativeDocumentMoniker": "Platforms\\Android\\BackgroundLocationService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackPortal\\Platforms\\Android\\BackgroundLocationService.cs",
+              "RelativeToolTip": "Platforms\\Android\\BackgroundLocationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T14:50:50.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AttendancePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackPortal\\AttendancePage.xaml.cs",
+              "RelativeDocumentMoniker": "AttendancePage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackPortal\\AttendancePage.xaml.cs",
+              "RelativeToolTip": "AttendancePage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T08:52:29.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AttendanceController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\Controllers\\AttendanceController.cs",
+              "RelativeDocumentMoniker": "..\\EmpTrackAPI.Api\\Controllers\\AttendanceController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\Controllers\\AttendanceController.cs",
+              "RelativeToolTip": "..\\EmpTrackAPI.Api\\Controllers\\AttendanceController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T15:28:50.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AttendanceModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrack.Shared\\Models\\AttendanceModel.cs",
+              "RelativeDocumentMoniker": "..\\EmpTrack.Shared\\Models\\AttendanceModel.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrack.Shared\\Models\\AttendanceModel.cs",
+              "RelativeToolTip": "..\\EmpTrack.Shared\\Models\\AttendanceModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T08:18:27.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PayrollModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrack.Shared\\Models\\PayrollModel.cs",
+              "RelativeDocumentMoniker": "..\\EmpTrack.Shared\\Models\\PayrollModel.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrack.Shared\\Models\\PayrollModel.cs",
+              "RelativeToolTip": "..\\EmpTrack.Shared\\Models\\PayrollModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T10:05:12.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrack.Shared\\Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "..\\EmpTrack.Shared\\Models\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrack.Shared\\Models\\LoginRequest.cs",
+              "RelativeToolTip": "..\\EmpTrack.Shared\\Models\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T06:35:21.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EmployeeLocation.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrack.Shared\\Models\\EmployeeLocation.cs",
+              "RelativeDocumentMoniker": "..\\EmpTrack.Shared\\Models\\EmployeeLocation.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrack.Shared\\Models\\EmployeeLocation.cs",
+              "RelativeToolTip": "..\\EmpTrack.Shared\\Models\\EmployeeLocation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T10:05:01.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AssignedLocation.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrack.Shared\\Models\\AssignedLocation.cs",
+              "RelativeDocumentMoniker": "..\\EmpTrack.Shared\\Models\\AssignedLocation.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrack.Shared\\Models\\AssignedLocation.cs",
+              "RelativeToolTip": "..\\EmpTrack.Shared\\Models\\AssignedLocation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T10:04:57.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrack.Shared\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "..\\EmpTrack.Shared\\Models\\AppUser.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrack.Shared\\Models\\AppUser.cs",
+              "RelativeToolTip": "..\\EmpTrack.Shared\\Models\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T15:02:23.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AppUsersController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\Controllers\\AppUsersController.cs",
+              "RelativeDocumentMoniker": "..\\EmpTrackAPI.Api\\Controllers\\AppUsersController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\Controllers\\AppUsersController.cs",
+              "RelativeToolTip": "..\\EmpTrackAPI.Api\\Controllers\\AppUsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T15:23:28.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AttendanceHistoryPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackPortal\\AttendanceHistoryPage.xaml.cs",
+              "RelativeDocumentMoniker": "AttendanceHistoryPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackPortal\\AttendanceHistoryPage.xaml.cs",
+              "RelativeToolTip": "AttendanceHistoryPage.xaml.cs",
+              "ViewState": "AgIAALIAAAAAAAAAAAA2wLgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T14:52:02.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "MobileAuthController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\Controllers\\MobileAuthController.cs",
+              "RelativeDocumentMoniker": "..\\EmpTrackAPI.Api\\Controllers\\MobileAuthController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackAPI.Api\\Controllers\\MobileAuthController.cs",
+              "RelativeToolTip": "..\\EmpTrackAPI.Api\\Controllers\\MobileAuthController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAIBJwHgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T15:05:51.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ApiConfig.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackPortal\\Helpers\\ApiConfig.cs",
+              "RelativeDocumentMoniker": "Helpers\\ApiConfig.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackPortal\\Helpers\\ApiConfig.cs",
+              "RelativeToolTip": "Helpers\\ApiConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T06:40:29.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackPortal\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackPortal\\LoginPage.xaml.cs",
+              "RelativeToolTip": "LoginPage.xaml.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwHwAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T06:57:09.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Microsoft.WindowsAppSDK.SelfContained.targets",
+              "DocumentMoniker": "C:\\Users\\user\\.nuget\\packages\\microsoft.windowsappsdk\\1.7.250909003\\buildTransitive\\Microsoft.WindowsAppSDK.SelfContained.targets",
+              "RelativeDocumentMoniker": "..\\..\\.nuget\\packages\\microsoft.windowsappsdk\\1.7.250909003\\buildTransitive\\Microsoft.WindowsAppSDK.SelfContained.targets",
+              "ToolTip": "C:\\Users\\user\\.nuget\\packages\\microsoft.windowsappsdk\\1.7.250909003\\buildTransitive\\Microsoft.WindowsAppSDK.SelfContained.targets",
+              "RelativeToolTip": "..\\..\\.nuget\\packages\\microsoft.windowsappsdk\\1.7.250909003\\buildTransitive\\Microsoft.WindowsAppSDK.SelfContained.targets",
+              "ViewState": "AgIAADsAAAAAAAAAAAAtwEwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-08-10T08:57:20.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "LeaveBalancePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackPortal\\LeaveBalancePage.xaml.cs",
+              "RelativeDocumentMoniker": "LeaveBalancePage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackPortal\\LeaveBalancePage.xaml.cs",
+              "RelativeToolTip": "LeaveBalancePage.xaml.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAwwAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T08:05:08.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "LeaveApprovalPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\EmpTrackPortal\\LeaveApprovalPage.xaml.cs",
+              "RelativeDocumentMoniker": "LeaveApprovalPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\EmpTrackPortal\\LeaveApprovalPage.xaml.cs",
+              "RelativeToolTip": "LeaveApprovalPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T13:55:54.198Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
